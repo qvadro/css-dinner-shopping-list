@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .1s ease-in;
+}
+
+html { height: 100%; }
+
+body {
+	font-family: “Tebuchet MC”, Tebuchet, Arial, sans-serif;
+	outline: 20px solid #fff;
+	background-color: #3B3F45;
+	min-height: 100%;
+}
+header,
+footer {
+	color: #EB7E7F;
+	background-color: #4A4F56;
+	text-align: center;
+	padding: 20px;
+	font-size: 21px;
+}
+header {
+	margin-bottom: 30px;
+}
+p {
+	padding-top: 7px;
+}
+main {
+	margin: 0 auto;
+	width: 50%;
+	margin-bottom: 30px;
+	background-color: yellow;
+}
+main li {
+	background-color: #88839E;
+	list-style-type: none;
+}
+
+footer {
+	padding: 15px 0;
+	margin: 0 auto;
+	width: 50%;
+}
+label {
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+	color: #FFF;
+	font-size: 20px;
+}
+main label:hover {
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	background-color: #625E77;
+}
+main label:active{
+	background-color: #EB7E7F;
+}
+main input[type="checkbox"] {
+	height: 20px;
+	width: 20px;
+	top: 3px;
+	cursor: pointer;
+}
+
+li:nth-child(even) {
+	background-color: #7A7593;
+}
+
+#pickles::after {
+	content: " ( for the next lesson about CSS )";
+	font-size: 14px;
+	color: #BDC3D4;
+}
+
+.apples::after {
+	content: " ( for more CSS manipulations )";
+	font-size: 14px;
+	color: #BDC3D4;
+}
+.oranges::after {
+	content: " ( because they are awesome )";
+	font-size: 14px;
+	color: #BDC3D4;
+}
+.plates::after {
+	content: " ( hmm... they always disappear )";
+	font-size: 14px;
+	color: #BDC3D4;
+}
+.bottle::after {
+	content: " ( for my friends )";
+	font-size: 14px;
+	color: #BDC3D4;
+}
+main input[type="checkbox"]:checked ~span {
+	color: #A49EB2;
+	text-decoration: line-through;
+}
